@@ -1,4 +1,4 @@
-#Snippets
+# Snippets
 
 A minimal code snippet manager built with Next.js, TypeScript, TailwindCSS, Prisma (SQLite), ShadCN UI, and Monaco Editor.
 
