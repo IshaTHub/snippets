@@ -22,7 +22,7 @@ const EditSnippetForm = ({ snippet }: { snippet: Snippet }) => {
     <div className="relative z-10 p-8 mt-0 mx-8 md:mx-16 lg:mx-20 bg-violet-100 bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl border border-white border-opacity-30 text-white flex flex-col gap-8 transition-all duration-300 ease-in-out hover:shadow-2xl">
         <div className="flex flex-col gap-6">
             <form action={saveSnippetAction} className="flex items-center justify-between border-b border-white border-opacity-30 pb-4">
-                {/* Changed text-black back to text-white for consistency with the dark glassmorphism theme */}
+                
                 <h1 className="font-bold text-4xl text-black drop-shadow-md">
                     Your Code Editor:
                 </h1>

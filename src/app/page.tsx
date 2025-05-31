@@ -1,10 +1,8 @@
-
 import { Button } from "@/components/ui/button";
  import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 
-// export const dynamic = "force-dynamic" // disabling the caching feature -> dynamic route
-// export const revalidate = 0; //
+
  
 export default async function Home() {
   const snippets = await prisma.snippet.findMany();
@@ -23,7 +21,7 @@ export default async function Home() {
           </Link>
         </div>
         
-        <div className="flex flex-col gap-3"> {/* Container for snippets list */}
+        <div className="flex flex-col gap-3"> 
           {snippets.map((snippet) => (
             <div 
               key={snippet.id} 
@@ -31,7 +29,7 @@ export default async function Home() {
             >
               <h3 className="font-medium text-lg text-gray-100">{snippet.title}</h3>
               <Link href={`/snippet/${snippet.id}`}>
-                {/* Changed variant to a gradient button for consistency */}
+              
                 <Button className="px-4 py-2 rounded-lg bg-gradient-to-r from-green-500 to-teal-600 text-white font-semibold hover:from-green-600 hover:to-teal-700 transition-all duration-300 ease-in-out">View</Button>
               </Link>
             </div>
