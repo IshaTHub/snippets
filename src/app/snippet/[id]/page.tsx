@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import * as actions from "@/actions";
-import BgGradient from '@/components/common/bg-gradient';
+
 
 type SnipppetDetailsProps = {
     params: Promise<{ id: string }>;
@@ -25,8 +25,7 @@ type SnipppetDetailsProps = {
       const deleteSnippetActions = actions.deleteSnippet.bind(null, snippet.id);
 
       return (
-        <div className="relative w-full">
-              <BgGradient />
+       
         <div className="relative z-10 p-8 m-8 md:m-16 lg:m-20 bg-violet-100 bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl border border-white border-opacity-20 text-white flex flex-col gap-8 transition-all duration-300 ease-in-out hover:shadow-2xl">
           <div className="flex items-center justify-between border-b border-black border-opacity-100 pb-4">
             <h1 className="font-bold text-4xl text-black drop-shadow-md">
@@ -49,7 +48,7 @@ type SnipppetDetailsProps = {
             <code>{snippet.code}</code>
           </pre>
         </div>
-        </div>
+       
       );
     };
     

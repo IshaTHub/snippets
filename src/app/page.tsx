@@ -1,4 +1,4 @@
-import BgGradient from "@/components/common/bg-gradient";
+
 import { Button } from "@/components/ui/button";
  import { prisma } from "@/lib/prisma";
 import Link from "next/link";
@@ -10,14 +10,11 @@ export default async function Home() {
   const snippets = await prisma.snippet.findMany();
 
   return (
-    <div className="relative w-full">
-      <BgGradient />
+    <div>
       <h1 className="font-bold text-4xl text-black drop-shadow-md flex item-center justify-around">
           Welcome to Snippets !!
         </h1>
-
-      {/* Main container with frosted glass effect, similar to SnippetDetailPage */}
-      <div className="relative z-10 p-8 m-8 md:m-16 lg:m-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl border border-black border-opacity-20 text-white flex flex-col gap-8 transition-all duration-300 ease-in-out hover:shadow-2xl">
+      <div className="relative z-10 p-8 m-8 md:m-16 lg:m-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl border border-white border-opacity-0 text-white flex flex-col gap-8 transition-all duration-300 ease-in-out hover:shadow-2xl">
        
         <div className="flex items-center justify-between border-b border-black border-opacity-30 pb-4">
           <h2 className="font-semibold text-2xl text-black">Your Snippets</h2>

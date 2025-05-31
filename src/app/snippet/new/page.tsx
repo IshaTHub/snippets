@@ -1,4 +1,4 @@
-import BgGradient from "@/components/common/bg-gradient";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -31,9 +31,9 @@ const CreateSnippetPage = () => {
     }
 
   return (
-   <div className="relative w-full">
-                 <BgGradient />
-    <form action={createSnippet} className="relative z-10 p-8 m-8 md:m-16 lg:m-20 bg-violet-100 bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl border border-white border-opacity-20 text-black flex flex-col gap-3 transition-all duration-300 ease-in-out hover:shadow-2xl">
+   <div>
+              
+    <form action={createSnippet} className="relative z-10 p-8 m-8 md:m-16 lg:m-20 bg-violet-50 bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl border border-white border-opacity-20 text-black flex flex-col gap-3 transition-all duration-300 ease-in-out hover:shadow-2xl">
       <h1 className="font-bold text-4xl text-black mb-4 drop-shadow-md">
         Create New Snippet
       </h1>
